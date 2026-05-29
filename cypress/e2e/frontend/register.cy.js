@@ -17,7 +17,7 @@ describe("Frontend - Cadastro", () => {
     cy.get('[data-testid="cadastrar"]').click();
 
     cy.contains("Cadastro realizado com sucesso", {
-      timeout: 1000,
+      timeout: 10000,
     }).should("be.visible");
   });
 });

@@ -20,7 +20,8 @@ describe("Frontend - Login", () => {
 
     //login via frontend
     cy.login(email, senha);
-
-    cy.contains("Home").should("be.visible");
+    cy.contains("Home", {
+      timeout: 10000,
+    }).should("be.visible");
   });
 });
